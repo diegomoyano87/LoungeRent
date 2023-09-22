@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule} from '@angular/material/icon';
+import { MatButtonModule} from '@angular/material/button';
+import { MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @Component({
@@ -14,10 +14,18 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 
 })
 export class NavbarComponent implements OnInit {
+abrirModal() {
+throw new Error('Method not implemented.');
+}
 
-  constructo  () { }
+  constructor  () { }
 
   ngOnInit(): void {
   }
 
 }
+
+
+
+
+  

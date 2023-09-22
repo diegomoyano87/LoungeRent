@@ -1,0 +1,32 @@
+<form>
+    <mat-form-field>
+      <input matInput placeholder="Nombre del producto">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Categoría de eventos</mat-label>
+      <mat-select>
+        <mat-option value="empresarial">Empresarial</mat-option>
+        <mat-option value="familiar">Familiar</mat-option>
+        <mat-option value="gala">Gala</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Precio por evento" type="number">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Cantidad disponible" type="number">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <textarea matInput placeholder="Detalle del producto"></textarea>
+    </mat-form-field>
+  
+    <input type="file" (change)="subirFoto($event)">
+    <img [src]="fotoSerializada" alt="Vista previa de la foto" *ngIf="fotoSerializada">
+  
+    <button mat-raised-button (click)="crearProducto()">Crear</button>
+  </form>
+  
